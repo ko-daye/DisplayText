@@ -70,6 +70,19 @@ public class MainActivity extends Activity {
 	
 	private void setButton() {
 		// mDisplayTextとmInputLineTextの状態から追加ボタンと消去ボタンの有効/無効を設定する。
+		if (mDisplayText.getText().length() > 0) {
+			mClearButton.setEnabled(true);
+		} else {
+			mClearButton.setEnabled(false);
+		}
+		
+		if (mInputLine.getText().length() > 0) {
+			if (mText.getLineNum() < 10) {
+				mAddButton.setEnabled(true);
+			}
+		} else {
+			mAddButton.setEnabled(false);
+		}
 	}
 
 	@Override

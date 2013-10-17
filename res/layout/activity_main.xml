@@ -41,6 +41,6 @@
         android:layout_alignLeft="@+id/addButton"
         android:layout_below="@+id/addButton"
         android:layout_marginTop="21dp"
-        android:text="TextView" />
+        android:text="" />
 
 </RelativeLayout>
